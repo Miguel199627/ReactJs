@@ -25,7 +25,7 @@ class Observable {
 
 }
 
-// Clase observada o escuchada por los observables
+// Clase observada o escuchada por los observadores
 class NumberExample extends Observable {
 
   constructor() {
@@ -63,6 +63,6 @@ let numberExample = new NumberExample();
 numberExample.subscribe(new NumberExampleSpanish());
 numberExample.subscribe(new NumberExampleSpanish());
 
-// Se invoca el metodo increment
+// Se invoca el metodo increment de la clase observada y hace reaccionar a los observadores 
 numberExample.increment();
 numberExample.increment();
